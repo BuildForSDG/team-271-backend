@@ -1,1 +1,1 @@
-web: gunicorn wonya.wsgi --log-file
+web: gunicorn wonya.wsgi --log-file - 

@@ -13,6 +13,10 @@ markdown = "*"
 django-filter = "*"
 python-decouple = "*"
 psycopg2 = "*"
+django-cors-headers = "*"
+gunicorn = "*"
+requests = "*"
+django-heroku = "*"
 
 [requires]
 python_version = "3.8"

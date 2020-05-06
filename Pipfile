@@ -7,12 +7,18 @@ verify_ssl = true
 autopep8 = "*"
 
 [packages]
-django = "*"
-djangorestframework = "*"
-markdown = "*"
-django-filter = "*"
-python-decouple = "*"
-psycopg2 = "*"
+django = "==3.0.6"
+djangorestframework = "==3.11.0"
+markdown = "==3.2.1"
+django-filter = "==2.2.0"
+python-decouple = "==3.3"
+psycopg2 = "==2.8.5"
+asgiref = "==3.2.7"
+autopep8 = "==1.5.2"
+pycodestyle = "==2.5.0"
+pytz = "==2020.1"
+sqlparse = "==0.3.1"
+django-rest-registration = "*"
 
 [requires]
 python_version = "3.8"

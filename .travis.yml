@@ -1,0 +1,18 @@
+language: python
+
+python:
+  - "3.7-dev"
+
+services:
+  - postgresql
+
+install:
+  - pip install -r requirements.txt
+
+before_script:
+  - psql -c "create database wonya_271_db;" -U postgres
+  - python manage.py makemigrations
+  - python manage.py migrate
+
+script:
+  - python manage.py test

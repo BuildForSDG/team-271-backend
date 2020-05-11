@@ -1,6 +1,7 @@
 A one-liner phrase describing this project or app
 
-[![Codacy Badge](https://img.shields.io/badge/Code%20Quality-D-red)](https://img.shields.io/badge/Code%20Quality-D-red)
+[![Build Status](https://travis-ci.org/BuildForSDG/team-271-backend.svg?branch=develop)](https://travis-ci.org/BuildForSDG/team-271-backend)
+
 
 
 ## About

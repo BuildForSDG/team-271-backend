@@ -19,6 +19,8 @@ pycodestyle = "==2.5.0"
 pytz = "==2020.1"
 sqlparse = "==0.3.1"
 django-rest-registration = "*"
+gunicorn = "*"
+django-heroku = "*"
 
 [requires]
 python_version = "3.8"

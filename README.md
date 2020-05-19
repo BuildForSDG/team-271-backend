@@ -2,7 +2,7 @@ A solution from two perspectives - victim and response side. This solution can h
 
 ## Badges
 
-[![Build Status](https://travis-ci.org/BuildForSDG/team-271-backend.svg?branch=develop)](https://travis-ci.org/BuildForSDG/team-271-backend)
+[![Build Status](https://travis-ci.org/BuildForSDG/team-271-backend.svg?branch=develop)](https://travis-ci.org/BuildForSDG/team-271-backend) [![codecov](https://codecov.io/gh/BuildForSDG/team-271-backend/branch/develop/graph/badge.svg)](https://codecov.io/gh/BuildForSDG/team-271-backend)
 
 ## Why
 

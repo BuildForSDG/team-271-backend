@@ -8,11 +8,19 @@ services:
 
 install:
   - pip install -r requirements.txt
+  - pip install codecov
 
 before_script:
-  - psql -c "create database wonya_271_db;" -U postgres
   - python manage.py makemigrations
   - python manage.py migrate
 
 script:
-  - python manage.py test
+  - coverage run --source='.' manage.py test
+  - bash <(curl -s https://codecov.io/bash)
+
+after_script:
+  - export DJANGO_SETTINGS_MODULE=wonya.settings
+  - python -m django_createsuperuser "WonyaAdmin" "myAdminPassword" wonya@admin.com
+
+after_success:
+  - codecov

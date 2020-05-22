@@ -38,14 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'rest_registration',
 ]
-
-REST_REGISTRATION = {
-    'REGISTER_VERIFICATION_ENABLED': False,
-    'RESET_PASSWORD_VERIFICATION_ENABLED': False,
-    'REGISTER_EMAIL_VERIFICATION_ENABLED': False,
-}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

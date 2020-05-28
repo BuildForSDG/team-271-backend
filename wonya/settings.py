@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_registration',
     'med_facility',
+    'incident'
 ]
 
 # GOOGLE_MAPS_API_KEY = config('GOOGLE_MAPS_API_KEY')

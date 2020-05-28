@@ -15,22 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from cases.views import CasesList_view, ResponderList_view
 
-<<<<<<< HEAD
-from .auth_urls import api_urlpatterns
-app_name = 'cases'
-=======
 
->>>>>>> 1cd0711a035bfb9950778f078428cc7987b4c72b
 urlpatterns = [
-    path('cases/',CasesList_view.as_view(),name='ReportedCase'),
-    path('responder/',ResponderList_view.as_view(), name='responders'),
     path('admin/', admin.site.urls),
-<<<<<<< HEAD
-    path('api/v1/', include(api_urlpatterns))
-
-=======
     path('api/v1/', include('api.urls')),
->>>>>>> 1cd0711a035bfb9950778f078428cc7987b4c72b
 ]

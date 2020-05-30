@@ -8,7 +8,7 @@ services:
 
 install:
   - pip install -r requirements.txt
-  - pip install Pillow
+  - pip -m install Pillow
   - pip install codecov
 
 before_script:

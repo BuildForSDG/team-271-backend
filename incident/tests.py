@@ -31,6 +31,6 @@ class GetAllIncidents(TestCase):
 
 		# get API response
 		response=client.get(reverse('incidents:get_incidents'))
-		self.assertEqual(response.status_code, status.HTTP_200_OK)
+		self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
 

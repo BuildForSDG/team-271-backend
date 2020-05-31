@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_registration',
     'med_facility',
+    'incident'
 ]
 
 # GOOGLE_MAPS_API_KEY = config('GOOGLE_MAPS_API_KEY')
@@ -87,6 +88,10 @@ WSGI_APPLICATION = 'wonya.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Image files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
@@ -154,3 +159,4 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+

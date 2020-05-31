@@ -15,4 +15,7 @@ class IncidentView(generics.ListCreateAPIView):
 		serializer.save(reporter=self.request.user)
 
 
-
+class IncidentDetailView(generics.RetrieveAPIView):
+	queryset = Incident.objects.all()
+	serializer_class = IncidentSerializer
+	permission_classes = [IsAuthenticatedOrReadOnly]

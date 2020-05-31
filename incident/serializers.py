@@ -7,58 +7,7 @@ class IncidentSerializer(serializers.ModelSerializer):
 		
 	class Meta:
 		model=Incident
-		fields=('id','injuries','plateNumber','sceneImage','date', 'fatalities','prePlateCharacters'
-			,'postPlateCharacter', 'reporter')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		fields=('id','fatalities','injuries','latitude','longitude','prePlateCharacters','plateNumber','postPlateCharacter',
+			'sceneImage','date','reporter')
 
 

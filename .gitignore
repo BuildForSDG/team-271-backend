@@ -9,3 +9,6 @@
 .vscode/
 .pytest_cache
 src.egg-info
+ 
+# Virtual environments
+myenv

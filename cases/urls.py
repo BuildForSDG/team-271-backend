@@ -6,5 +6,5 @@ app_name = 'cases'
 
 urlpatterns = [
     path('',CasesList_view.as_view(),name='ReportedCase'),
-    path('responder/',ResponderList_view.as_view(),name='responders'),
+    path('<int:pk>/',ResponderList_view.as_view(),name='responders'),
 ]

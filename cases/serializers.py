@@ -9,4 +9,4 @@ class CaseSerializer(serializers.ModelSerializer):
 class ResponderSerializer(serializers.ModelSerializer):
     class Meta:
         model=models.Responder
-        fields=('vehicle_plate_no', 'capacity')
+        fields=('case_id','vehicle_plate_no', 'capacity')

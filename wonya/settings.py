@@ -35,23 +35,31 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_createsuperuser',
     'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth',
     'corsheaders',
-    'rest_registration',
+    'allauth',
+    'allauth.socialaccount',
+    'allauth.account',
+    'users',
     'med_facility',
-    'incident'
+    'incident',
 ]
 
-# GOOGLE_MAPS_API_KEY = config('GOOGLE_MAPS_API_KEY')
+AUTH_USER_MODEL = 'users.CustomUser'
 
-REST_REGISTRATION = {
-    'REGISTER_VERIFICATION_ENABLED': False,
-    'RESET_PASSWORD_VERIFICATION_ENABLED': False,
-    'REGISTER_EMAIL_VERIFICATION_ENABLED': False,
-}
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -66,6 +74,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+REST_USE_JWT = True
 
 ROOT_URLCONF = 'wonya.urls'
 
@@ -87,6 +97,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'wonya.wsgi.application'
 
+REST_AUTH_SERIALIZERS = {
+    'USER_DETAILS_SERIALIZER': 'users.serializers.UserSerializer',
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
